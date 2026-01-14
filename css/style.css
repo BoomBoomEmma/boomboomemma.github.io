@@ -1,0 +1,175 @@
+/* Custom Stylesheet */
+@font-face {
+  font-family: 'RG2014C';
+  src: url('./RG2014/RG2014C.eot');
+  src: url('./RG2014/RG2014C.eot?#iefix') format('embedded-opentype'),
+       url('./RG2014/RG2014C.woff2') format('woff2'),
+       url('./RG2014/RG2014C.woff') format('woff'),
+       url('./RG2014/RG2014C.ttf') format('truetype'),
+       url('./RG2014/RG2014C.svg#RG2014C') format('svg');
+}
+@font-face {
+  font-family: 'RG2014D';
+  src: url('./RG2014/RG2014D.eot');
+  src: url('./RG2014/RG2014D.eot?#iefix') format('embedded-opentype'),
+       url('./RG2014/RG2014D.woff2') format('woff2'),
+       url('./RG2014/RG2014D.woff') format('woff'),
+       url('./RG2014/RG2014D.ttf') format('truetype'),
+       url('./RG2014/RG2014D.svg#RG2014D') format('svg');
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+body {
+  --bg: hsl(180deg 100% 100%);
+  --bg1: hsl(327.6deg, 100%, 53.9%);
+  font-family: RG2014C;
+}
+html {
+  font-family: RG2014C;
+}
+.sidenav {
+  color: #000000;
+}
+.sidenav-trigger {
+  color: #ffffff;
+}
+nav .brand-logo {
+  display: contents;
+}
+nav .sidenav-trigger i {
+  line-height: 48px;
+}
+@media only screen and (min-width: 601px) {
+  nav a.sidenav-trigger i {
+    line-height: 56px;
+  }
+}
+#logo-container {
+  pointer-events: none;
+}
+li {
+  font-weight: 500;
+}
+.brand-logo {
+  font-weight: 500;
+}
+.btn-large:hover {
+  transform: scale(1.1);
+}
+.imagelink:hover {
+  transition: all .4s 0s;
+  transform: scale(1.1);
+}
+.imagelink {
+  transition: all .4s 0s;
+  transform: scale(1);
+}
+.enlargeOnHover:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 2px 4px hsl(0 0% 0% / 0%);
+}
+
+
+.animatedOutline {
+  --border-angle: 0deg;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 4px hsl(0 0% 0% / 0%);
+  border: 10px solid transparent;
+  background: linear-gradient(#ff1493, #ff1493) padding-box,
+    conic-gradient(
+      from var(--border-angle),
+      var(--bg) 50%,
+      /*#03f6c0*/
+      #ff1493
+    )
+    border-box;
+    animation: border-angle-rotate 1s infinite linear;
+}
+.animatedOutline:hover {
+  --border-angle: 0deg;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 4px hsl(0 0% 0% / 0%);
+  border: 10px solid transparent;
+  background: linear-gradient(#ff1493, #ff1493) padding-box,
+    conic-gradient(
+      from var(--border-angle),
+      var(--bg) 2%,
+      /*#03f6c0*/
+      #bd21c7
+    )
+    border-box;
+    animation: border-angle-rotate 1s infinite linear;
+}
+.animatedOutlineS {
+  --border-angle: 0deg;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 4px hsl(0 0% 0% / 0%) inset;
+  border: 4px solid transparent;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+    conic-gradient(
+      from var(--border-angle),
+      var(--bg1) 50%,
+      /*#03f6c0*/
+      #02c6a3
+    )
+    border-box;
+    animation: border-angle-rotate 1s infinite linear;
+}
+.animatedOutlineS:hover {
+  --border-angle: 0deg;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 4px hsl(0 0% 0% / 0%) inset;
+  border: 4px solid transparent;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+    conic-gradient(
+      from var(--border-angle),
+      var(--bg1) 2%,
+      /*#03f6c0*/
+      #ffde00
+    )
+    border-box;
+    animation: border-angle-rotate 1s infinite linear;
+}
+.animatedOutlineL {
+  --border-angle: 0deg;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 4px hsl(0 0% 0% / 0%) inset;
+  border: 4px solid transparent;
+  background: linear-gradient(#ff1493, #ff1493) padding-box,
+    conic-gradient(
+      from var(--border-angle),
+      var(--bg1) 50%,
+      /*#03f6c0*/
+      #02c6a3
+    )
+    border-box;
+    animation: border-angle-rotate 1s infinite linear;
+}
+.animatedOutlineL:hover {
+  --border-angle: 0deg;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 4px hsl(0 0% 0% / 0%) inset;
+  border: 4px solid transparent;
+  background: linear-gradient(#ff1493, #ff1493) padding-box,
+    conic-gradient(
+      from var(--border-angle),
+      var(--bg1) 2%,
+      /*#03f6c0*/
+      #ffde00
+    )
+    border-box;
+    animation: border-angle-rotate 1s infinite linear;
+}
+@keyframes border-angle-rotate {
+  from { --border-angle: 0deg; }
+  to { --border-angle: 360deg; }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
